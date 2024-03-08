@@ -1,0 +1,116 @@
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'); /* "Young Serif", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); /* "Outfit", sans-serif; */
+
+* {box-sizing: border-box;}
+
+:root {
+    /* Heading color */
+    --rose-heading:hsl(332, 51%, 32%);
+    --orange-heading:hsl(14, 45%, 36%);
+    --dark-heading:hsl(24, 5%, 18%);
+    /* Text color */
+    --text-color:hsl(30, 10%, 34%);
+    /* line color */
+    --line:hsl(30, 18%, 87%);
+
+    --outer-content: hsl(30, 54%, 90%);
+    --inner-content:hsl(0, 0%, 100%);
+
+    --rose-box:hsl(330, 100%, 98%);
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+h1 {color:var(--dark-heading);}
+h2,li::marker,span {color: var(--orange-heading);}
+h3 {color:var(--rose-heading);}
+hr {color:var(--line);}
+p,li,tr {font-family:"Outfit", sans-serif;}
+li {padding:5px;}
+
+.container {
+    background-color: var(--outer-content);
+    color: var(--text-color);
+    width:100%;
+    height:100%;
+    font-family: "Young Serif", serif;
+    font-weight:400;
+    display:flex;
+    justify-content: center;
+    padding:10px 0px;
+}
+
+.card {
+    width:50%;
+    height:100%;
+    background-color: var(--inner-content);
+    border-radius:15px;
+}
+
+.content-img {
+    width:100%;
+    height:auto;
+    padding:20px 20px 5px 20px;
+    margin:0;
+}
+
+.content-img img {
+    width:100%;
+    border-radius:15px;
+}
+
+.content-recipe {
+    padding:5px 20px 20px 20px; 
+}
+
+.recipe-time {
+    background-color:var(--rose-box);
+    border-radius:10px;
+    padding:20px;
+}
+
+.recipe-time li::marker {color:var(--rose-heading);}
+
+.recipe-nutr table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.recipe-nutr tr {
+    border-bottom: 1px solid var(--line);
+}
+
+.recipe-nutr tr:first-child,
+.recipe-nutr tr:last-child {
+    border-bottom: none;
+}
+
+.recipe-nutr th,
+.recipe-nutr td {
+    font-weight: 400;
+    padding: 10px;
+}
+
+@media (max-width:550px)
+{
+    .container {
+        padding:0;
+    }
+    
+    .card {
+        width:100%;
+        border-radius: 0;
+    }
+    
+    .content-img {
+        padding:0;
+    }
+
+    .content-img img {
+        border-radius: 0px;
+    }
+}
