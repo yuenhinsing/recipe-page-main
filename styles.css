@@ -75,42 +75,20 @@ li {padding:5px;}
 
 .recipe-time li::marker {color:var(--rose-heading);}
 
-.recipe-nutr table {
+.recipe-nutrition table {
     border-collapse: collapse;
     width: 100%;
 }
 
-.recipe-nutr tr {
+.recipe-nutrition tr {
     border-bottom: 1px solid var(--line);
 }
 
-.recipe-nutr tr:first-child,
-.recipe-nutr tr:last-child {
+.recipe-nutrition tr:first-child,
+.recipe-nutrition tr:last-child {
     border-bottom: none;
 }
 
-.recipe-nutr th,
-.recipe-nutr td {
-    font-weight: 400;
+.recipe-nutrition td {
     padding: 10px;
-}
-
-@media (max-width:550px)
-{
-    .container {
-        padding:0;
-    }
-    
-    .card {
-        width:100%;
-        border-radius: 0;
-    }
-    
-    .content-img {
-        padding:0;
-    }
-
-    .content-img img {
-        border-radius: 0px;
-    }
 }
